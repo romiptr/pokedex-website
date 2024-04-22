@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Pokemon-Solid;
+    src: url(assets/fonts/Pokemon-Solid.ttf) format('truetype');
+}
+
+.display-1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: Pokemon-Solid, sans-serif; 
+}
