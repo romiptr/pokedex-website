@@ -3,8 +3,99 @@
     src: url(assets/fonts/Pokemon-Solid.ttf) format('truetype');
 }
 
-.display-1 {
-    font-size: 20px;
-    text-align: center;
+@font-face {
+    font-family: Flexo-Demi;
+    src: url(assets/fonts/flexo/Flexo-Demi.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Flexo-Medium;
+    src: url(assets/fonts/flexo/Flexo-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Flexo-Bold;
+    src: url(assets/fonts/flexo/Flexo-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Flexo-BoldIt;
+    src: url(assets/fonts/flexo/Flexo-BoldIt.ttf) format('truetype');
+}
+
+body {
+    background-image: url(assets/images/pokemon-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#pokedex-header{
+    background-image: url(assets/images/pokemon-banner.jpg);
+    background-size: cover;
+    background-position: center;
     font-family: Pokemon-Solid, sans-serif; 
+    color: #F7D346;
+    text-shadow: 6px 4px 10px #203166;
+    padding: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#pokedex-menu{
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 10px;    
+}
+
+.card:hover{
+    transform: scale(1.05) translateY(-10px);
+    transition: transform 0.3s ease;
+}
+
+#pokedex-menu-index{
+    font-size: 12px;
+    font-family: Flexo-BoldIt, sans-serif; 
+    display: inline-block;
+    background-image: linear-gradient(to right, #245CA5, #9769E6);
+    border-radius: 10px;
+    box-shadow: 2px 3px;
+    padding: 5px 10px ;
+}
+
+#pokedex-menu-name{
+    font-size: 20px;
+    font-family: Flexo-Demi, sans-serif; 
+}
+
+.modal-header{
+    font-family: Flexo-Bold, sans-serif; 
+}
+
+.modal-body{
+    font-family: Flexo-Medium, sans-serif; 
+}
+
+
+#border-modal-stat-costum{
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color:rgb(242, 242, 242);
+    padding: 15px 10px 5px;
+}
+
+#border-modal-statbar-costum{
+    border-style: outset;
+    border-radius: 10px;
+    border-width: medium;
+    /* background-image: linear-gradient(to right, #4d6ca5, #756e9e); */
+    background-image: linear-gradient(to right, #08397a, #9769E6);
+    color: white;
+    padding: 5px 10px 10px 10px;
+
+}
+
+#pokedex-footer{
+    background-color: rgba(0, 0, 0, 0.4); 
+    color:#F5F5F5
 }
